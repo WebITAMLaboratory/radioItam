@@ -48,33 +48,37 @@ nav ul li{
 }
 .nav-display ul li{
 	display: inline-block;
-	margin-left: 35px;
+	margin-left: 28px;
 	padding-top: 2px;
 	padding-bottom: 2px;
 	text-align: center;
 }
 .nav-display ul li a{
 	text-decoration: none;
-	color: lightgrey;
+	color: #aba4a4;
 }
 .nav-display ul li a:hover{
 	color: #000;
 }
 #nav-hide-page{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
 	z-index: 5;
 	background: rgba(10,10,10,0.5);
+	overflow-x: hidden;
 }
 #nav-hide-page ul{
-	width: 45%;
+	width: 60%;
 	height: 100%;
 	background: #fff;
 	margin: 0;
 	padding: 0;
+	/*
+	add moz webkit ms etc....
+	*/
 	border-top-right-radius: 20px;
 	z-index: 8;
 	box-shadow: 10px 0 100px #000;
@@ -82,8 +86,8 @@ nav ul li{
 #nav-hide-page ul li{
 	display: block;
 	padding-top: 20px;
-	padding-left: 50px;
 	padding-bottom: 2px;
+	padding-left: 50px;
 	border-bottom: 0.5px lightgrey solid;
 	font-size: 30px;
 }
@@ -101,7 +105,9 @@ nav ul li{
 .display-off{
 	display: none;
 }
-
+#toggle-nav{
+	cursor: pointer;
+}
 /*
 // MEDIA QUERIES
 */
@@ -131,9 +137,18 @@ nav ul li{
 	.nav-hide div span{
 		height: 36px;
 	}
+	#nav-hide-page ul{
+		width: 45%;
+	}
+	#nav-hide-page ul li{
+		padding-left: 30px;
+	}
 }
 @media only screen and (max-width: 720px)
 {
+	#nav-hide-page ul{
+		width: 60%;
+	}
 	.header-img{
 		width: 210px;
 	}
@@ -142,5 +157,8 @@ nav ul li{
 	}
 	.nav-hide{
 		padding: 20px 15px 21px 0;
+	}
+	#nav-hide-page ul li{
+		padding-left: 10px;
 	}
 }
