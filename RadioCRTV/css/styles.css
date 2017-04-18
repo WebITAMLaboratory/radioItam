@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	padding: 81px 0 0 0;
+	padding: 81px 0 41px 0;
 	font-size: 16px;
 	font-family: 'Questrial', sans-serif;
 }
@@ -12,7 +12,8 @@ nav ul li{
 	display: inline-block;
 }
 .main-header{
-	position: absolute;
+	background: #fff;
+	position: fixed;
 	top: 0;
 	left: 0;
 	height: 81px;
@@ -107,6 +108,46 @@ nav ul li{
 }
 #toggle-nav{
 	cursor: pointer;
+}
+.social-media{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 41px;
+	width: 100%;
+	border-top: 0.5px lightgrey solid; 
+	background: #fff;
+}
+.social-media nav,.social-media nav ul{
+	padding: 0;
+	height: 40px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.social-media nav ul li{
+	display: inline-block;
+	width: 30%;
+	height: 40px;
+	text-align: center;
+}
+.social-media nav ul li a{
+	width: 40px;
+	height: 40px;
+	padding: auto;
+	text-align: center;
+}
+.social-media nav ul li a i{
+	width: 40px;
+	height: 40px;
+}
+#facebook{
+	color: #3b5998;
+}
+#twitter{
+	color: #1dcaff;
+}
+#youtube{
+	color: #b31217;
 }
 /*
 // MEDIA QUERIES
