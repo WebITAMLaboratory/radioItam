@@ -33,7 +33,6 @@ nav ul li{
 }
 .nav-hide{
 	display: none;
-	float: left;
 }
 .nav-display{
 	margin: 0;
@@ -60,4 +59,50 @@ nav ul li{
 }
 .nav-display ul li a:hover{
 	color: #000;
+}
+
+
+
+
+/*
+// MEDIA QUERIES
+*/
+@media only screen and (max-width: 980px)
+{
+	.nav-display{
+		display: none;
+	}
+	.nav-hide{
+		display: block;
+		float: right;
+		margin: 0;
+		padding: 20px 40px 21px 0;
+		height: 80px;
+	}
+	.nav-hide div{
+		text-align: center;
+		width: auto;
+		margin: 0;
+		padding: 0;
+		height: 40px;
+		font-size: 36px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		color: #000;
+	}
+	.nav-hide div span{
+		height: 36px;
+	}
+}
+@media only screen and (max-width: 720px)
+{
+	.header-img{
+		width: 210px;
+	}
+	.header-img img{
+		margin-left: 10px;
+	}
+	.nav-hide{
+		padding: 20px 15px 21px 0;
+	}
 }
