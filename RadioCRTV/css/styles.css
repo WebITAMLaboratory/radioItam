@@ -60,8 +60,26 @@ nav ul li{
 .nav-display ul li a:hover{
 	color: #000;
 }
-
-
+#nav-hide-page{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+	background: rgba(10,10,10,0.5);
+}
+#nav-hide-page ul{
+	width: 35%;
+	height: 100%;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	border-top-right-radius: 20px;
+	z-index: 8;
+	box-shadow: 10px 0 100px #000;
+}
 
 
 /*
