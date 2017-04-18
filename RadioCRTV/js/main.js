@@ -24,3 +24,13 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
 }
+
+
+  document.getElementsByClassName("mySlides").onclick = function() {modulos(1)}
+  document.getElementsByClassName("mySlides").onclick = function() {modulos(2)}
+  document.getElementsByClassName("mySlides").onclick = function() {modulos(3)}
+function modulos(x){
+  if (x!=null) {
+    alert("hola");
+  }
+}
