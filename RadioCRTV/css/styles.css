@@ -61,7 +61,6 @@ nav ul li{
 	color: #000;
 }
 #nav-hide-page{
-	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -71,7 +70,7 @@ nav ul li{
 	background: rgba(10,10,10,0.5);
 }
 #nav-hide-page ul{
-	width: 35%;
+	width: 45%;
 	height: 100%;
 	background: #fff;
 	margin: 0;
@@ -80,7 +79,28 @@ nav ul li{
 	z-index: 8;
 	box-shadow: 10px 0 100px #000;
 }
+#nav-hide-page ul li{
+	display: block;
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-bottom: 2px;
+	border-bottom: 0.5px lightgrey solid;
+	font-size: 30px;
+}
+#nav-hide-page ul li a{
+	text-decoration: none;
+	color: #000;
+}
+#nav-hide-page ul li:hover{
+	background: grey;
+}
 
+.display-on{
+	display: block;
+}
+.display-off{
+	display: none;
+}
 
 /*
 // MEDIA QUERIES
