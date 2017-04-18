@@ -55,13 +55,12 @@ nav ul li{
 }
 .nav-display ul li a{
 	text-decoration: none;
-	color: lightgrey;
+	color: #aba4a4;
 }
 .nav-display ul li a:hover{
 	color: #000;
 }
 #nav-hide-page{
-	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -106,7 +105,9 @@ nav ul li{
 .display-off{
 	display: none;
 }
-
+#toggle-nav{
+	cursor: pointer;
+}
 /*
 // MEDIA QUERIES
 */
