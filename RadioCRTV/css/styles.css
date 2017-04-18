@@ -2,6 +2,7 @@ body{
 	margin: 0;
 	padding: 100px 0 0 0;
 	font-size: 16px;
+	font-family: 'Questrial', sans-serif;
 }
 body *{
 	box-sizing: border-box;
@@ -35,17 +36,26 @@ nav ul li{
 }
 .nav-display{
 	margin: 0;
-	padding: 30px 40px 30px 400px;
+	padding: 30px 40px 30px 200px;
 	height: 100px;
 	float: left;
 }
 .nav-display ul{
 	margin: 0;
-	padding: 0;
+	padding: 10px 0 10px;
 	height: 40px;
-	font-size: 24px;
+	font-size: 18px;
 }
 .nav-display ul li{
 	display: inline-block;
-	width: 100px;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+}
+.nav-display ul li a{
+	text-decoration: none;
+	color: lightgrey;
+}
+.nav-display ul li a:hover{
+	color: #000;
 }
