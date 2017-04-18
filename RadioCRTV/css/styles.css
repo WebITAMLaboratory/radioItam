@@ -15,20 +15,21 @@ nav ul li{
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 100px;
+	height: 81px;
 	width: 100%;
 	border-bottom: 1px grey solid;
 }
 .header-img{
 	float: left;
-	height: 99px;
-	width: 120px;
-	padding: 0;
+	height: 80px;
+	width: 250px;
+	padding: 20px 0 21px 0;
 	margin: 0;
 }
 .header-img img{
-	width: 120px;
-	height: 99px;
+	margin-left: 50px;
+	width: 200px;
+	height: 40px;
 }
 .nav-hide{
 	display: none;
@@ -36,20 +37,21 @@ nav ul li{
 }
 .nav-display{
 	margin: 0;
-	padding: 30px 40px 30px 200px;
-	height: 100px;
+	padding: 30px 10px 31px 50px;
+	height: 80px;
 	float: left;
 }
 .nav-display ul{
 	margin: 0;
-	padding: 10px 0 10px;
-	height: 40px;
-	font-size: 18px;
+	padding: 0;
+	height: 20px;
+	font-size: 16px;
 }
 .nav-display ul li{
 	display: inline-block;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin-left: 35px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	text-align: center;
 }
 .nav-display ul li a{
