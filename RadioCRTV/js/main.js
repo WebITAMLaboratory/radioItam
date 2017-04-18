@@ -1,3 +1,84 @@
+  document.getElementById("ModuloUno").style.display = 'none';
+  document.getElementById("ModuloDos").style.display = 'none';
+  document.getElementById("ModuloTres").style.display = 'none';
+
+  document.getElementById("ModuloUnoDos").style.display = 'none';
+  document.getElementById("ModuloDosDos").style.display = 'none';
+  document.getElementById("ModuloTresDos").style.display = 'none';
+
+  document.getElementById("ModuloUnoTres").style.display = 'none';
+  document.getElementById("ModuloDosTres").style.display = 'none';
+  document.getElementById("ModuloTresTres").style.display = 'none';
+
+  var x =document.getElementById("ModuloPrincipalBoton");
+  var y =document.getElementById("ModuloUnoBoton");
+  var z =document.getElementById("ModuloDosBoton");
+  var w =document.getElementById("ModuloTresBoton");
+  x.onclick = function() {modulos(0)};
+  y.onclick = function() {modulos(1)};
+  z.onclick = function() {modulos(2)};
+  w.onclick = function() {modulos(3)};
+
+function modulos(i){
+  switch (i) {
+    case 0:
+        document.getElementById("ModuloPrincipal").style.display = 'block';
+        document.getElementById("ModuloUno").style.display = 'none';
+        document.getElementById("ModuloDos").style.display = 'none';
+        document.getElementById("ModuloTres").style.display = 'none';
+
+        document.getElementById("ModuloUnoDos").style.display = 'none';
+        document.getElementById("ModuloDosDos").style.display = 'none';
+        document.getElementById("ModuloTresDos").style.display = 'none';
+
+        document.getElementById("ModuloUnoTres").style.display = 'none';
+        document.getElementById("ModuloDosTres").style.display = 'none';
+        document.getElementById("ModuloTresTres").style.display = 'none';
+
+        break;
+    case 1:
+          document.getElementById("ModuloPrincipal").style.display = 'none';
+          document.getElementById("ModuloUno").style.display = 'block';
+          document.getElementById("ModuloDos").style.display = 'block';
+          document.getElementById("ModuloTres").style.display = 'block';
+
+          document.getElementById("ModuloUnoDos").style.display = 'none';
+          document.getElementById("ModuloDosDos").style.display = 'none';
+          document.getElementById("ModuloTresDos").style.display = 'none';
+
+          document.getElementById("ModuloUnoTres").style.display = 'none';
+          document.getElementById("ModuloDosTres").style.display = 'none';
+          document.getElementById("ModuloTresTres").style.display = 'none';
+        break;
+    case 2:
+          document.getElementById("ModuloPrincipal").style.display = 'none';
+          document.getElementById("ModuloUno").style.display = 'none';
+          document.getElementById("ModuloDos").style.display = 'none';
+          document.getElementById("ModuloTres").style.display = 'none';
+
+          document.getElementById("ModuloUnoDos").style.display = 'block';
+          document.getElementById("ModuloDosDos").style.display = 'block';
+          document.getElementById("ModuloTresDos").style.display = 'block';
+
+          document.getElementById("ModuloUnoTres").style.display = 'none';
+          document.getElementById("ModuloDosTres").style.display = 'none';
+          document.getElementById("ModuloTresTres").style.display = 'none';
+        break;
+    case 3:          
+    document.getElementById("ModuloPrincipal").style.display = 'none';
+    document.getElementById("ModuloUno").style.display = 'none';
+    document.getElementById("ModuloDos").style.display = 'none';
+    document.getElementById("ModuloTres").style.display = 'none';
+
+    document.getElementById("ModuloUnoDos").style.display = 'none';
+    document.getElementById("ModuloDosDos").style.display = 'none';
+    document.getElementById("ModuloTresDos").style.display = 'none';
+
+    document.getElementById("ModuloUnoTres").style.display = 'block';
+    document.getElementById("ModuloDosTres").style.display = 'block';
+    document.getElementById("ModuloTresTres").style.display = 'block';
+  }
+}
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -23,14 +104,4 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
-}
-
-
-  document.getElementsByClassName("mySlides").onclick = function() {modulos(1)}
-  document.getElementsByClassName("mySlides").onclick = function() {modulos(2)}
-  document.getElementsByClassName("mySlides").onclick = function() {modulos(3)}
-function modulos(x){
-  if (x!=null) {
-    alert("hola");
-  }
 }
