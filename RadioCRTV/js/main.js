@@ -79,32 +79,34 @@
 //     document.getElementById("ModuloTresTres").style.display = 'block';
 //   }
 // }
-// var slideIndex = 1;
-// showDivs(slideIndex);
+var slideIndex = 1;
+showDivs();
 
-// function plusDivs(n) {
-//   showDivs(slideIndex += n);
-// }
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-// function currentDiv(n) {
-//   showDivs(slideIndex = n);
-// }
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
 
-// function showDivs(n) {
-//   var i;
-//   var x = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("demo");
-//   if (n > x.length) {slideIndex = 1}    
-//   if (n < 1) {slideIndex = x.length}
-//   for (i = 0; i < x.length; i++) {
-//      x[i].style.display = "none";  
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//      dots[i].className = dots[i].className.replace(" w3-white", "");
-//   }
-//   x[slideIndex-1].style.display = "block";  
-//   dots[slideIndex-1].className += " w3-white";
-// }
+function showDivs() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  //var dots = document.getElementsByClassName("demo");
+  if (slideIndex > x.length) {slideIndex = 1}    
+  if (slideIndex < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  //for (i = 0; i < dots.length; i++) {
+  //   dots[i].className = dots[i].className.replace(" w3-white", "");
+  //}
+  x[slideIndex-1].style.display = "block";
+  slideIndex++;  
+  setTimeout(showDivs,3500);
+  //dots[slideIndex-1].className += " w3-white";
+}
 
 
 
@@ -140,3 +142,31 @@
 // END Close event for navbar //===============
 //=================================================
 
+// Open event of player =====================
+  document.getElementById("live").addEventListener("click",function(){
+    if(document.getElementById("player").classList.contains("display-off"))
+    {
+      document.getElementById("player").classList.remove("display-off");
+      document.getElementById("player").classList.add("display-on");
+    }
+    else
+    {
+      document.getElementById("player").classList.remove("display-on");
+      document.getElementById("player").classList.add("display-off");
+    }
+  });
+
+  document.getElementById("live2").addEventListener("click",function(){
+    if(document.getElementById("player").classList.contains("display-off"))
+    {
+      document.getElementById("player").classList.remove("display-off");
+      document.getElementById("player").classList.add("display-on");
+    }
+    else
+    {
+      document.getElementById("player").classList.remove("display-on");
+      document.getElementById("player").classList.add("display-off");
+    }
+  });
+// END Open event of player //===============
+//=================================================

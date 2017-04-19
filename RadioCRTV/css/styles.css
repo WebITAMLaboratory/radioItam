@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	padding: 81px 0 41px 0;
+	padding: 81px 0 150px 0;
 	font-size: 16px;
 	font-family: 'Questrial', sans-serif;
 }
@@ -19,6 +19,7 @@ nav ul li{
 	height: 81px;
 	width: 100%;
 	border-bottom: 1px grey solid;
+	z-index: 5;
 }
 .header-img{
 	float: left;
@@ -49,7 +50,7 @@ nav ul li{
 }
 .nav-display ul li{
 	display: inline-block;
-	margin-left: 28px;
+	margin-left: 32px;
 	padding-top: 2px;
 	padding-bottom: 2px;
 	text-align: center;
@@ -123,23 +124,34 @@ nav ul li{
 	height: 40px;
 	margin-top: 0;
 	margin-bottom: 0;
+	padding-top: 1px;
 }
 .social-media nav ul li{
 	display: inline-block;
 	width: 30%;
-	height: 40px;
+	height: 39px;
 	text-align: center;
 }
 .social-media nav ul li a{
 	width: 40px;
-	height: 40px;
+	height: 39px;
 	padding: auto;
 	text-align: center;
 }
 .social-media nav ul li a i{
 	width: 40px;
-	height: 40px;
+	height: 39px;
 }
+.social{
+	padding: 24px 10px 25px 50px;
+	float: right;
+}
+.social ul li{
+	margin-left: 25px;
+}
+/*=======================================================
+// SOCIAL MEDIA COLORS
+=======================================================*/
 #facebook{
 	color: #3b5998;
 }
@@ -149,9 +161,56 @@ nav ul li{
 #youtube{
 	color: #b31217;
 }
-/*
+
+/*=======================================================
+// CARROUSEL
+=======================================================*/
+.carrousel{
+	width: 100%;
+	height: 650px;
+}
+.carrousel img{
+	max-height: 650px;
+}
+.fade{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+	-moz-animation-name: fade;
+	-moz-animation-duration: 2s;
+	-ms-animation-name: fade;
+	-ms-animation-duration: 2s;
+	-o-animation-name: fade;
+	-o-animation-duration: 2s;
+	animation-name: fade;
+	animation-duration: 2s;
+}
+@-webkit-keyframes fade{
+	from {opacity: 0}
+	to {opacity: 1}
+}
+@keyframes fade{
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+/*=======================================================
+// PLAYER
+=======================================================*/
+.player{
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
+	padding: 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+#live,#live2{
+	cursor: pointer;
+}
+/*=======================================================
 // MEDIA QUERIES
-*/
+=======================================================*/
 @media only screen and (max-width: 980px)
 {
 	.nav-display{

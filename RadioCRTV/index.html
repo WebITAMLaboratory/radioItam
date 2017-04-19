@@ -7,6 +7,7 @@
 	<meta name="description" content="Home page of Radio Itam, come visit us and hear some great music!">
 	<meta name="robots" content="index, follow">
 	<meta name="author" content="Emiliano Sotomayor (uboat46), Victor Osornio (Worrengilgamesh)">
+	<link rel="shortcut icon" href="img/favicon.ico"/>
 	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -15,26 +16,35 @@
 	<!-- NAV HIDE BAR -->
 	<nav id="nav-hide-page" class="display-off">
 		<ul>
-			<li><a href="" title="">HOME</a></li>
-			<li><a href="" title="">CATEGORIAS</a></li>
 			<li><a href="" title="">PROGRAMAS</a></li>
-			<li><a href="" title="">HORARIOS</a></li>
-			<li><a href="" title="">CONTACTOS</a></li>
 			<li><a href="" title="">VIDEOS</a></li>
+			<li><a href="" title="">CONTACTO</a></li>
+			<li><a id="live">EN VIVO</a></li>
 		</ul>
 	</nav><!-- /NAV HIDE BAR -->
 	<header id="header" class="main-header">
 		<div class="header-img">
-			<img src="img/crtv.png" alt="RADIO ITAM" class="imagenRadio">
+			<img src="img/RADIO-ITAM.png" alt="RADIO ITAM" class="imagenRadio">
 		</div>
 		<nav class="nav-display">
 			<ul>
-				<li><a href="" title="">HOME</a></li>
-				<li><a href="" title="">CATEGORIAS</a></li>
 				<li><a href="" title="">PROGRAMAS</a></li>
-				<li><a href="" title="">HORARIOS</a></li>
-				<li><a href="" title="">CONTACTOS</a></li>
 				<li><a href="" title="">VIDEOS</a></li>
+				<li><a href="" title="">CONTACTO</a></li>
+				<li><a id="live2">EN VIVO</a></li>
+			</ul>
+		</nav>
+		<nav class="nav-display social">
+			<ul>
+				<li>
+					<a href="https://twitter.com/radioitam" title="twitter radio itam" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/radio.itam/" title="facebook radio itam" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/channel/UCg32eGxCoTuwVLNv-7k6L2g" title="youtube radio itam" target="_blank"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+				</li>
 			</ul>
 		</nav>
 		<nav class="nav-hide">
@@ -45,6 +55,7 @@
 			</div>
 		</nav>
 	</header><!-- /header -->
+	<!-- TOTALLY FUNCTIONAL ASIDE
 	<aside class="social-media">
 		<nav>
 			<ul>
@@ -54,36 +65,16 @@
 			</ul>
 		</nav>
 	</aside>
+	-->
 	<section class="carrousel">
-		<div style="max-width:800px">
-			<img class="mySlides" src="img/carUno.png" style="width:100%">
-			<img class="mySlides" src="img/carDos.png" style="width:100%">
-			<img class="mySlides" src="img/carTres.png" style="width:100%">
-			<img class="mySlides" src="img/carCuatro.png" style="width:100%">
-			<div style="width:100%">
-				<div class="onclick="plusDivs(-1)">&#10094;</div>
-				<div class="wonclick="plusDivs(1)">&#10095;</div>
-				<span onclick="currentDiv(1)"></span>
-				<span onclick="currentDiv(2)"></span>
-				<span onclick="currentDiv(3)"></span>
-				<span onclick="currentDiv(4)"></span>
-			</div>
-		</div>
-		<button id="ModuloPrincipalBoton">Modulo Principal</button>
-		<button id="ModuloUnoBoton">Modulo Uno</button>
-		<button id="ModuloDosBoton">Modulo Dos</button>
-		<button id="ModuloTresBoton">Modulo Tres</button>
-		<img src="img/itamDemo.png" id="ModuloPrincipal" alt="itamDemo" style="width:304px;height:228px;">
-		<img src="img/musicaDemo.jpg" id="ModuloUno" alt="musicaDemo" style="width:304px;height:228px;">
-		<img src="img/cineDemo.png" id="ModuloUnoDos" alt="cineDemo" style="width:304px;height:228px;">
-		<img src="img/deportesDemo.png" id="ModuloUnoTres" alt="deportesDemo" style="width:304px;height:228px;">
-		<img src="img/politicaDemo.png" id="ModuloDos" alt="politicaDemo" style="width:304px;height:228px;">
-		<img src="img/noticiasDemo.png" id="ModuloDosDos" alt="noticiasDemo" style="width:304px;height:228px;">
-		<img src="img/entrevistasDemo.png" id="ModuloDosTres" alt="entrevistasDemo" style="width:304px;height:228px;">
-		<img src="img/especialesDemo.png" id="ModuloTres" alt="especialesDemo" style="width:304px;height:228px;">
-		<img src="img/finanzasDemo.png" id="ModuloTresDos" alt="finanzasDemo" style="width:304px;height:228px;">
-		<img src="img/culturaDemo.png" id="ModuloTresTres" alt="culturaDemo" style="width:304px;height:228px;">		
+			<img class="mySlides fade" src="img/CAMARA.png" style="width:100%">
+			<img class="mySlides fade" src="img/MICROFONO.png" style="width:100%">
+			<img class="mySlides fade" src="img/CERVEZA.png" style="width:100%">
+			<img class="mySlides fade" src="img/LIBROS.png" style="width:100%">
 	</section>
+	<div class="player display-off" id="player">
+		<iframe src="https://mixlr.com/users/6061859/embed?autoplay=true" width="100%" height="150px" scrolling="no" frameborder="no" marginheight="0" marginwidth="0"></iframe>
+	</div>
 	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
