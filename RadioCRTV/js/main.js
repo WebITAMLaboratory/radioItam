@@ -165,4 +165,218 @@ function showDivs() {
     document.getElementById("entretenimiento").classList.remove("display-on");
     document.getElementById("entretenimiento").classList.add("display-on");
   });
+
 // END Display deportes event //===============
+
+
+var iframes ={
+  Radiola:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/278674724&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false",
+  SARCÓSMICO:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/297113879&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false",
+  YNosotrosQue:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/298421586&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+  HablemosDeGénero:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/298421310&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false",
+  CiniCine:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/106949861&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+  MassiveChisme:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/299733155&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false",
+  PortalDelCine:"jajatemamaste",
+  CatadorPorAccidente:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/301513500&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false",
+  GGNews:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/298421694&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+  LaMesa:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/301513627&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false",
+  ChilaquilesConHuevos:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/298421115&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+  MalDelPuerco:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/301513745&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+  ElCapital:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/298421456&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+  LaSobreMesa:"jajatemamaste",
+  LosGuapoliticos:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/298421793&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+  };
+
+  var radiola =document.getElementById("btnRadiola");
+  var SARCOSMICO = document.getElementById("btnSarcosmico");
+  var YNosotrosQue = document.getElementById("btnYNosotrosQue");
+  var HablemosDeGénero = document.getElementById("btnHablemosDeGenero");
+  var CiniCine = document.getElementById("btnCiniCine");
+  var MassiveChisme = document.getElementById("btnMassiveChisme");
+  var PortalDelCine= document.getElementById("btnPortalDelCine");
+  var CatadorPorAccidente = document.getElementById("btnCatadorPorAcidente");
+  var GGNews = document.getElementById("btnGgNews");
+  var LaMesa = document.getElementById("btnLaMesa");
+  var ChilaquilesConHuevos = document.getElementById("btnChilaquilesConHuevo");
+  var MalDelPuerco = document.getElementById("btnMalDelPuerco");
+  var ElCapital = document.getElementById("btnElCapital");
+  var LaSobreMesa = document.getElementById("btnLaSobremesa");
+  var LosGuapoliticos = document.getElementById("btnLosGuapoliticos");
+
+if (radiola) {
+  radiola.addEventListener("click",function(){
+      var titulo="Radiola";
+      var ifra=iframes[titulo];
+      quitaPon(titulo,ifra);
+    });
+}
+if (SARCOSMICO) {
+  SARCOSMICO.addEventListener("click",function(){
+      var titulo="SARCOSMICO";
+      var ifra=iframes[titulo];
+      quitaPon(titulo,ifra);
+    });
+}
+if (YNosotrosQue) {
+  YNosotrosQue.addEventListener("click",function(){
+      var titulo="YNosotrosQue";
+      var ifra=iframes[titulo];
+      quitaPon(titulo,ifra);
+    });
+}
+if (HablemosDeGénero) {
+  HablemosDeGénero.addEventListener("click",function(){
+      var titulo="HablemosDeGénero";
+      var ifra=iframes[titulo];
+      quitaPon(titulo,ifra);
+    });
+}
+if (CiniCine) {
+  CiniCine.addEventListener("click",function(){
+      var titulo="CiniCine";
+      var ifra=iframes[titulo];
+      quitaPon(titulo,ifra);
+    });
+}
+if (MassiveChisme) {
+  MassiveChisme.addEventListener("click",function(){
+      var titulo="MassiveChisme";
+      var ifra=iframes[titulo];
+      quitaPon(titulo,ifra);
+    });
+}
+if (PortalDelCine) {
+  PortalDelCine.addEventListener("click",function(){
+      var titulo="PortalDelCine";
+      var ifra=iframes[titulo];
+      quitaPon(titulo,ifra);
+    });
+}
+if (CatadorPorAccidente) {
+  CatadorPorAccidente.addEventListener("click",function(){
+      var titulo="CatadorPorAccidente";
+      var ifra=iframes[titulo];
+      quitaPon(titulo,ifra);
+    });
+}
+if (GGNews) {
+  GGNews.addEventListener("click",function(){
+      var titulo="GGNews";
+      var ifra=iframes[titulo];
+      quitaPon(titulo,ifra);
+    });
+}
+if (LaMesa) {
+  LaMesa.addEventListener("click",function(){
+      var titulo="LaMesa";
+      var ifra=iframes[titulo];
+      quitaPon(titulo,ifra);
+    });
+}
+if (ChilaquilesConHuevos) {
+  ChilaquilesConHuevos.addEventListener("click",function(){
+      var titulo="ChilaquilesConHuevos";
+      var ifra=iframes[titulo];
+      quitaPon(titulo,ifra);
+    });
+}
+if (MalDelPuerco) {
+  MalDelPuerco.addEventListener("click",function(){
+      var titulo="MalDelPuerco";
+      var ifra=iframes[titulo];
+      quitaPon(titulo,ifra);
+    });
+}
+if (ElCapital) {
+  ElCapital.addEventListener("click",function(){
+      var titulo="ElCapital";
+      var ifra=iframes[titulo];
+      quitaPon(titulo,ifra);
+    });
+}
+if (LaSobreMesa) {
+  PortalDelCine.addEventListener("click",function(){
+      var titulo="LaSobreMesa";
+      var ifra=iframes[titulo];
+      quitaPon(titulo,ifra);
+    });
+}
+if (LosGuapoliticos) {
+  LosGuapoliticos.addEventListener("click",function(){
+      var titulo="LosGuapoliticos";
+      var ifra=iframes[titulo];
+      quitaPon(titulo,ifra);
+    });
+}
+
+
+function quitaPon(titulo,ifra){
+  if(document.getElementById("culturaEntretenimiento").classList.contains("display-off"))
+    {
+      document.getElementById("culturaEntretenimiento").classList.remove("display-off");
+      document.getElementById("culturaEntretenimiento").classList.add("display-on");
+      document.getElementById("ProgrmasJS").classList.remove("display-off");
+      document.getElementById("ProgrmasJS").classList.add("display-on");
+      document.getElementById("radio").classList.remove("display-on");
+      document.getElementById("radio").classList.add("display-off");
+      document.getElementById("titulo").innerHTML = titulo;
+      document.getElementById("iframeJs").src = ifra;
+    }
+}
+
+//iframes // =====================================
+
+/*
+*============Cultura/Entretenimiento==============
+*/
+//Radiola 
+//<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/278674724&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+//SARCÓSMICO 
+//<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/297113879&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+//Y, ¿nosotros qué? 
+//<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/298421586&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+//Hablemos de Género 
+//<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/298421310&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+//Cini-Cine 
+//<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/106949861&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+//Massive Chisme 
+//<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/299733155&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+//Portal Del Cine
+//jajatemamaste
+
+//Catador por accidente 
+//<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/301513500&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+/*
+*============Deportes==============
+*/
+
+//GG News
+//<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/298421694&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+//La Mesa
+//<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/301513627&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+//Chilaquiles Con Huevos
+//<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/298421115&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+//Mal del puerco 
+//<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/301513745&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+//El Capital 
+//<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/298421456&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+//La Sobre Mesa
+//jajatemamaste
+
+//Los Guapolíticos
+//<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/298421793&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+
+
