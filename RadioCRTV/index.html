@@ -7,30 +7,32 @@
 	<meta name="description" content="Home page of Radio Itam, come visit us and hear some great music!">
 	<meta name="robots" content="index, follow">
 	<meta name="author" content="Emiliano Sotomayor (uboat46), Victor Osornio (Worrengilgamesh)">
-	<link rel="shortcut icon" href="img/favicon.ico"/>
+	<link rel="shortcut icon" href="img/RIp.ico"/>
 	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<!-- NAV HIDE BAR -->
 	<nav id="nav-hide-page" class="display-off">
 		<ul>
-			<li><a href="" title="">PROGRAMAS</a></li>
-			<li><a href="" title="">VIDEOS</a></li>
-			<li><a href="" title="">CONTACTO</a></li>
-			<li><a id="live">EN VIVO</a></li>
+			<li id="programas"><a title="">PROGRAMAS</a></li>
+			<li><a title="">VIDEOS</a></li>
+			<li><a title="">CONTACTO</a></li>
+			<li id="live"><a id="livee">EN VIVO</a></li>
 		</ul>
 	</nav><!-- /NAV HIDE BAR -->
+	<!-- MAIN HEADER-->
 	<header id="header" class="main-header">
-		<div class="header-img">
+		<div class="header-img" id="header-img">
 			<img src="img/RADIO-ITAM.png" alt="RADIO ITAM" class="imagenRadio">
 		</div>
 		<nav class="nav-display">
 			<ul>
-				<li><a href="" title="">PROGRAMAS</a></li>
-				<li><a href="" title="">VIDEOS</a></li>
-				<li><a href="" title="">CONTACTO</a></li>
+				<li><a id="programas2" title="">PROGRAMAS</a></li>
+				<li><a title="">VIDEOS</a></li>
+				<li><a title="">CONTACTO</a></li>
 				<li><a id="live2">EN VIVO</a></li>
 			</ul>
 		</nav>
@@ -54,7 +56,7 @@
 				</span>
 			</div>
 		</nav>
-	</header><!-- /header -->
+	</header><!-- MAIN HEADER-->
 	<!-- TOTALLY FUNCTIONAL ASIDE
 	<aside class="social-media">
 		<nav>
@@ -66,12 +68,50 @@
 		</nav>
 	</aside>
 	-->
-	<section class="carrousel">
+	<main>
+		<section id="carrousel" class="carrousel display-on">
 			<img class="mySlides fade" src="img/CAMARA.png" style="width:100%">
 			<img class="mySlides fade" src="img/MICROFONO.png" style="width:100%">
 			<img class="mySlides fade" src="img/CERVEZA.png" style="width:100%">
 			<img class="mySlides fade" src="img/LIBROS.png" style="width:100%">
-	</section>
+		</section>
+
+		<div id="radio" class="radio display-off">
+			<section class="categorias">
+				<ul>
+					<li><p id="BtnCultura">Cultura<span>/</span>Entretenimiento</p></li>
+					<li><p id="BtnDeportes">Deportes</p></li>
+					<li><p id="BtnNoticias">Noticias y política</p></li>
+				</ul>
+			</section>
+			<section id="clases-programas" class="programas display-off">
+				<ul id="entretenimiento" class="display-off">
+					<li><p>RADIOLA</p></li>
+					<li><p>SARCÓSMICO</p></li>
+					<li><p>Y NOSOTROS QUÉ?</p></li>
+					<li><p>HABLEMOS DE GÉNERO</p></li>
+					<li><p>CINI CINE</p></li>
+					<li><p>MASSIVE CHISME</p></li>
+					<li><p>PORTAL DEL CINE</p></li>
+					<li><p>CATADOR POR ACCIDENTE</p></li>
+				</ul>
+				<ul id="deportes" class="display-off">
+					<li><p>GG NEWS</p></li>
+					<li><p>LA MESA</p></li>
+					<li><p>CHILAQUILES CON HUEVO</p></li>
+					<li><p>MAL DEL PUERCO</p></li>
+					<li><p>EL CAPITAL</p></li>
+					<li><p>LA SOBREMESA</p></li>
+					<li><p>GUAPOLITICOS</p></li>
+				</ul>		
+			</section>
+		</div>
+
+		<div id="soundcloud display-off" class="soundcloud">
+			<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/278674724&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+		</div>
+	</main>
+	
 	<div class="player display-off" id="player">
 		<iframe src="https://mixlr.com/users/6061859/embed?autoplay=true" width="100%" height="150px" scrolling="no" frameborder="no" marginheight="0" marginwidth="0"></iframe>
 	</div>
