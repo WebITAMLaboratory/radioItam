@@ -1,8 +1,17 @@
+
+/*=======================================================
+// GENERAL CSS
+=======================================================*/
+
 body{
+	width: 100%;
+	height: 100%;
 	margin: 0;
 	padding: 81px 0 150px 0;
 	font-size: 16px;
 	font-family: 'Questrial', sans-serif;
+	/*font-family: 'Open Sans Condensed', sans-serif;*/
+	font-family: 'Josefin Slab', serif;
 }
 body *{
 	box-sizing: border-box;
@@ -11,6 +20,20 @@ nav ul li{
 	list-style: none;
 	display: inline-block;
 }
+li{
+	list-style: none;
+}
+main{
+	width: 100%;
+	height: 750px;
+	margin: 0;
+	padding: 0;
+}
+
+/*=======================================================
+// MAIN HEADER
+=======================================================*/
+
 .main-header{
 	background: #fff;
 	position: fixed;
@@ -36,6 +59,11 @@ nav ul li{
 .nav-hide{
 	display: none;
 }
+
+/*=======================================================
+// TOP NAVBAR
+=======================================================*/
+
 .nav-display{
 	margin: 0;
 	padding: 30px 10px 31px 50px;
@@ -62,13 +90,18 @@ nav ul li{
 .nav-display ul li a:hover{
 	color: #000;
 }
+
+/*=======================================================
+// MOVILE NAVBAR
+=======================================================*/
+
 #nav-hide-page{
 	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
-	z-index: 5;
+	z-index: 8;
 	background: rgba(10,10,10,0.5);
 	overflow-x: hidden;
 }
@@ -81,8 +114,8 @@ nav ul li{
 	/*
 	add moz webkit ms etc....
 	*/
+	z-index: 10;
 	border-top-right-radius: 20px;
-	z-index: 8;
 	box-shadow: 10px 0 100px #000;
 }
 #nav-hide-page ul li{
@@ -95,12 +128,15 @@ nav ul li{
 }
 #nav-hide-page ul li a{
 	text-decoration: none;
-	color: #000;
+	color: #aba4a4;
 }
 #nav-hide-page ul li:hover{
 	background: grey;
 }
 
+/*=======================================================
+// DISPLAYS ( I/O )
+=======================================================*/
 .display-on{
 	display: block;
 }
@@ -110,6 +146,11 @@ nav ul li{
 #toggle-nav{
 	cursor: pointer;
 }
+
+/*=======================================================
+// BOTTOM SOCIAL MEDIA NAVBAR
+=======================================================*/
+
 .social-media{
 	position: fixed;
 	bottom: 0;
@@ -142,16 +183,23 @@ nav ul li{
 	width: 40px;
 	height: 39px;
 }
+
+/*=======================================================
+// TOP SOCIAL MEDIA NAVBAR
+=======================================================*/
+
 .social{
-	padding: 24px 10px 25px 50px;
+	padding: 24px 10px 25px 35px;
 	float: right;
 }
 .social ul li{
-	margin-left: 25px;
+	margin-left: 20px;
 }
+
 /*=======================================================
 // SOCIAL MEDIA COLORS
 =======================================================*/
+
 #facebook{
 	color: #3b5998;
 }
@@ -165,6 +213,7 @@ nav ul li{
 /*=======================================================
 // CARROUSEL
 =======================================================*/
+
 .carrousel{
 	width: 100%;
 	height: 650px;
@@ -196,6 +245,7 @@ nav ul li{
 /*=======================================================
 // PLAYER
 =======================================================*/
+
 .player{
 	width: 90%;
 	margin-right: 5%;
@@ -204,13 +254,94 @@ nav ul li{
 	position: fixed;
 	bottom: 0;
 	left: 0;
+	border: 2px #F2F2F2 solid;
 }
 #live,#live2{
 	cursor: pointer;
 }
+
+/*=======================================================
+// CATEGORIAS
+=======================================================*/
+.radio{
+	width: 100%;
+	height: 750px;
+	padding: 0;
+	margin: 0;
+}
+.categorias{
+	width: 60%;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+.categorias ul{
+	margin: 0;
+	padding: 0 0 0 40px;
+	font-size: 50px;
+}
+.categorias ul li{
+	display: block;
+	padding-top: 20px;
+	color: #000;
+}
+.categorias ul li p span{
+	color: red;
+}
+.categorias ul li p{
+	background: #fff;
+	display: inline-block;
+	padding: 2px;
+}
+.categorias ul li p:hover{
+	-webkit-border-radius: 0 20px 0 20px;
+	-moz-border-radius: 0 20px 0 20px;
+	-ms-border-radius: 0 20px 0 20px;
+	-o-border-radius: 0 20px 0 20px;
+    background: #d7d7d7;
+}
+.programas{
+	width: 40%;
+	padding: 0;
+	margin: 0;
+	background: #d7d7d7;
+	float: left;
+}
+.programas ul{
+	margin: 0;
+	padding: 0 0 0 40px;
+	font-size: 25px;
+}
+.programas ul li{
+	display: block;
+	padding-top: 5px;
+	color: #969696;
+	font-weight: bold;
+}
+
+#programas,#programas2{
+	cursor: pointer;
+}
+#header-img{
+	cursor: pointer;
+}
+#BtnDeportes,#BtnCultura,#BtnNoticias{
+	cursor: pointer;
+}
+
+/*=======================================================
+// SOUNDCLOUD
+=======================================================*/
+.soundcloud{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 /*=======================================================
 // MEDIA QUERIES
 =======================================================*/
+
 @media only screen and (max-width: 980px)
 {
 	.nav-display{
