@@ -4,8 +4,9 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlPlugin = require('html-webpack-plugin');
 
 var extractTextPlugin = new ExtractTextPlugin({
-    filename: 'main.css',
+    filename: 'styles.css',
 })
+
 
 module.exports = {
     entry: './src/js/main.js',
@@ -29,7 +30,7 @@ module.exports = {
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
-                loader:'file-loader'
+                use: 'file-loader'
             },
             {
                 test: /\.html$/,

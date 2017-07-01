@@ -1,2 +1,7 @@
-import '../css/styles.scss';
-alert('hello');
+import '../css/main.scss';
+
+import $ from './jquery';
+
+$(document).ready(function(){
+    alert('hello');
+});
