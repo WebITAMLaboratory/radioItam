@@ -3,7 +3,8 @@ import '../css/main.scss';
 import $ from './jquery';
 
 $(document).ready(function(){
-    var slideIndex = 1;    
+    var slideIndex = 1;
+
     (function carrouselTurn()
     {
         var slides = $('#carrousel').find('img');
@@ -17,7 +18,7 @@ $(document).ready(function(){
         });
         $(slides[slideIndex - 1]).toggleClass('hide');
         slideIndex++;
-        setTimeout(carrouselTurn,3500);
+        setTimeout(carrouselTurn,3400);
     })()
 
     //=====================Toggle Function for navbar =====================
