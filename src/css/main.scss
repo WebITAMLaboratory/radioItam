@@ -240,15 +240,15 @@ main{
 }
 .fade{
 	-webkit-animation-name: fade;
-	-webkit-animation-duration: 3.5s;
+	-webkit-animation-duration: 4.5s;
 	-moz-animation-name: fade;
-	-moz-animation-duration: 3.5s;
+	-moz-animation-duration: 4.5s;
 	-ms-animation-name: fade;
-	-ms-animation-duration: 3.5s;
+	-ms-animation-duration: 4.5s;
 	-o-animation-name: fade;
-	-o-animation-duration: 3.5s;
+	-o-animation-duration: 4.5s;
 	animation-name: fade;
-	animation-duration: 3.5s;
+	animation-duration: 4.5s;
 }
 @-webkit-keyframes fade{
 	0% {opacity: 0}

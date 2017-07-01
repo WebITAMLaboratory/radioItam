@@ -18,7 +18,7 @@ $(document).ready(function(){
         });
         $(slides[slideIndex - 1]).toggleClass('hide');
         slideIndex++;
-        setTimeout(carrouselTurn,3400);
+        setTimeout(carrouselTurn,4400);
     })()
 
     //=====================Toggle Function for navbar =====================
