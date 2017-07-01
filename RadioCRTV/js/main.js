@@ -18,6 +18,7 @@ function showDivs()
   setTimeout(showDivs,3500);   
 }
 
+
 //=====================Toggle Function for navbar =====================
 //=====================================================================
 document.getElementById("toggle-nav").addEventListener("click",function()
