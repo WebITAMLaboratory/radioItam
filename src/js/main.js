@@ -19,39 +19,22 @@ $(document).ready(function(){
         $(slides[slideIndex - 1]).toggleClass('hide');
         slideIndex++;
         setTimeout(carrouselTurn,4400);
-    })()
+    })();
 
     //=====================Toggle Function for navbar =====================
     //=====================================================================
-    document.getElementById("toggle-nav").addEventListener("click",function()
-    {
-        if(document.getElementById("nav-hide-page").classList.contains("display-off"))
-        {
-        document.getElementById("nav-hide-page").classList.remove("display-off");
-        document.getElementById("nav-hide-page").classList.add("display-on");
-        }else
-        {
-        document.getElementById("nav-hide-page").classList.remove("display-on");
-        document.getElementById("nav-hide-page").classList.add("display-off");
-        }
+    $('#toggle-nav').on('click',function(e){
+        e.preventDefault();
+        $('#nav-hide-page').toggleClass('hide');
     });
     //=====================END Toggle function for navbar==========================
     //=============================================================================
 
     //=====================Close event for navbar =====================
     //=============================================================================
-    document.getElementById("nav-hide-page").addEventListener("click",function()
-    {
-        if(this.classList.contains("display-off"))
-        {
-        this.classList.remove("display-off");
-        this.classList.add("display-on");
-        }
-        else
-        {
-        this.classList.remove("display-on");
-        this.classList.add("display-off");
-        }
+    $('#nav-hide-page').on('click',function(e){
+        e.preventDefault();
+        $('#nav-hide-page').toggleClass('hide');
     });
     // =====================END Close event for navbar //=========================
     //=============================================================================
