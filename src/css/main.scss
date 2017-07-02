@@ -5,6 +5,10 @@
     width: $w;
     height: $h;
 }
+
+.hide{
+	display: none;
+}
 /*=======================================================
 // GENERAL CSS
 =======================================================*/
@@ -100,9 +104,10 @@ main{
 =======================================================*/
 
 #nav-hide-page{
+	@include width-height(100%,100%);
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	height: 100%;
 	width: 100%;
 	z-index: 8;
@@ -110,17 +115,16 @@ main{
 	overflow-x: hidden;
 }
 #nav-hide-page ul{
-	width: 60%;
-	height: 100%;
+	@include width-height(60%,100%);
 	background: #fff;
-	margin: 0;
+	margin: 0 0 0 40%;
 	padding: 0;
 	/*
 	add moz webkit ms etc....
 	*/
 	z-index: 10;
-	border-top-right-radius: 20px;
-	box-shadow: 10px 0 100px #000;
+	border-top-left-radius: 20px;
+	box-shadow: -10px 0 100px #000;
 }
 #nav-hide-page ul li{
 	display: block;
@@ -236,24 +240,24 @@ main{
 }
 .fade{
 	-webkit-animation-name: fade;
-	-webkit-animation-duration: 4.5s;
+	-webkit-animation-duration: 3s;
 	-moz-animation-name: fade;
-	-moz-animation-duration: 4.5s;
+	-moz-animation-duration: 3s;
 	-ms-animation-name: fade;
-	-ms-animation-duration: 4.5s;
+	-ms-animation-duration: 3s;
 	-o-animation-name: fade;
-	-o-animation-duration: 4.5s;
+	-o-animation-duration: 3s;
 	animation-name: fade;
-	animation-duration: 4.5s;
+	animation-duration: 3.5s;
 }
 @-webkit-keyframes fade{
 	0% {opacity: 0}
-	75% {opacity: 1}
+	50% {opacity: 1}
 	100% {opacity: 0}
 }
 @keyframes fade{
 	0% {opacity: 0}
-	75% {opacity: 1}
+	50% {opacity: 1}
 	100% {opacity: 0}
 }
 
@@ -414,13 +418,4 @@ main{
     height:450;
     scrolling:no;
     frameborder:no;
-}
-#nav-hide-page{
-	display: block;
-}
-#nav-hide-page.hide{
-	display: none;
-}
-.hide{
-	display: none;
 }
