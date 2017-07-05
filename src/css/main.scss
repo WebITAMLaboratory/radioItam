@@ -33,7 +33,7 @@ li{
 }
 main{
 	width: 100%;
-	height: 750px;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 }
@@ -113,33 +113,77 @@ main{
 	z-index: 8;
 	background: rgba(10,10,10,0.5);
 	overflow-x: hidden;
+	ul{
+		@include width-height(60%,100%);
+		background: #fff;
+		margin: 0 0 0 40%;
+		padding: 0;
+		/*
+		add moz webkit ms etc....
+		*/
+		z-index: 10;
+		border-top-left-radius: 20px;
+		box-shadow: -10px 0 100px #000;
+		li{
+			display: block;
+			padding-top: 20px;
+			padding-bottom: 2px;
+			padding-left: 50px;
+			border-bottom: 0.5px lightgrey solid;
+			font-size: 30px;
+			&:hover{
+				background: grey;
+			}
+			a{
+				text-decoration: none;
+				color: #aba4a4;
+			}
+		}
+		.media{
+				@include width-height(100%,64px);
+				border: none;
+				font-size: auto;
+				padding: 0;
+				text-align: center;
+				margin-top: 40px;
+				a{
+					z-index: 9;
+					margin-top: 15px;
+					@include width-height(100%,64px);
+					display: block;
+					text-decoration: none;
+				}
+			}
+	}
 }
-#nav-hide-page ul{
-	@include width-height(60%,100%);
-	background: #fff;
-	margin: 0 0 0 40%;
-	padding: 0;
-	/*
-	add moz webkit ms etc....
-	*/
-	z-index: 10;
-	border-top-left-radius: 20px;
-	box-shadow: -10px 0 100px #000;
+
+/*=======================================================
+// FACEBOOK API
+=======================================================*/
+.facebook{
+	@include width-height(100%,500px);
+	text-align: center;
+	margin-top: 40px;
+	iframe{
+		@include width-height(498px,500px);
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
-#nav-hide-page ul li{
-	display: block;
-	padding-top: 20px;
-	padding-bottom: 2px;
-	padding-left: 50px;
-	border-bottom: 0.5px lightgrey solid;
-	font-size: 30px;
-}
-#nav-hide-page ul li a{
-	text-decoration: none;
-	color: #aba4a4;
-}
-#nav-hide-page ul li:hover{
-	background: grey;
+
+/*=======================================================
+// YOUTUBE API
+=======================================================*/
+.youtube{
+	@include width-height(100%,auto);
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	iframe{
+		@include width-height(498px,auto);
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 /*=======================================================
@@ -167,7 +211,10 @@ main{
 /*=======================================================
 // BOTTOM SOCIAL MEDIA NAVBAR
 =======================================================*/
-
+.social-media{
+	display: none;
+}
+/*
 .social-media{
 	position: fixed;
 	bottom: 0;
@@ -201,7 +248,7 @@ main{
 	width: 40px;
 	height: 39px;
 }
-
+*/
 /*=======================================================
 // TOP SOCIAL MEDIA NAVBAR
 =======================================================*/
@@ -233,11 +280,11 @@ main{
 =======================================================*/
 
 .carrousel{
-	width: 100%;
-	height: 650px;
+	@include width-height(100%,650px);
 }
 .carrousel img{
 	max-height: 650px;
+	@include width-height(100%,100%);
 }
 .fade{
 	-webkit-animation-name: fade;
@@ -260,6 +307,20 @@ main{
 	0% {opacity: 0}
 	75% {opacity: 1}
 	100% {opacity: 0}
+}
+
+/*=======================================================
+// GENERAL INFO
+=======================================================*/
+
+.general{
+	text-align: center;
+	h1{
+		font-size: 55px;
+	}
+	p{
+		font-size: 30px;
+	}
 }
 
 /*=======================================================
@@ -398,6 +459,10 @@ main{
 }
 @media only screen and (max-width: 720px)
 {
+	
+	.carrousel{
+		@include width-height(100%,200px);
+	}
 	#nav-hide-page ul{
 		width: 80%;
 		margin-left: 20%;
@@ -414,7 +479,7 @@ main{
 	#nav-hide-page ul li{
 		padding-left: 10px;
 	}
-
+	/*
 	.social-media{
 		@include width-height(70px,302px);
 		display: block;
@@ -448,8 +513,43 @@ main{
 					}
 				}
 			}
+		}	
+	}
+	*/
+	.general{
+		text-align: center;
+		h1{
+			font-size: 40px;
 		}
-		
+		p{
+			font-size: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width: 500px)
+{
+	.facebook{
+		@include width-height(100%,500px);
+		text-align: center;
+		margin-top: 40px;
+		iframe{
+			@include width-height(90%,500px);
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.youtube{
+		@include width-height(100%,auto);
+		text-align: center;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		iframe{
+			@include width-height(90%,auto);
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 }
 
