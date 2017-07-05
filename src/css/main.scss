@@ -183,7 +183,7 @@ main{
 		display: block;
 	}
 	iframe{
-		@include width-height(498px,500px);
+		@include width-height(498px,520px);
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -573,11 +573,11 @@ main{
 @media only screen and (max-width: 500px)
 {
 	.facebook{
-		@include width-height(100%,500px);
+		@include width-height(100%,520px);
 		text-align: center;
 		margin-top: 40px;
 		iframe{
-			@include width-height(90%,500px);
+			@include width-height(90%,520px);
 			margin-left: auto;
 			margin-right: auto;
 		}
