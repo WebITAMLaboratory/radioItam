@@ -176,6 +176,7 @@ main{
 	width: 100%;
 	border-top: 0.5px lightgrey solid; 
 	background: #fff;
+	display: none;
 }
 .social-media nav,.social-media nav ul{
 	padding: 0;
@@ -416,6 +417,7 @@ main{
 
 	.social-media{
 		@include width-height(70px,302px);
+		display: block;
 		position: fixed;
 		left: 0;
 		top:150px;
