@@ -6,9 +6,6 @@
     height: $h;
 }
 
-.hide{
-	display: none;
-}
 /*=======================================================
 // GENERAL CSS
 =======================================================*/
@@ -77,28 +74,33 @@ main{
 	padding: 30px 10px 31px 50px;
 	height: 80px;
 	float: left;
+	ul{
+		margin: 0;
+		padding: 0;
+		height: 20px;
+		font-size: 16px;
+		li{
+			display: inline-block;
+			margin-left: 32px;
+			padding-top: 2px;
+			padding-bottom: 2px;
+			text-align: center;
+			a{
+				text-decoration: none;
+				color: #aba4a4;
+				&.red{
+					color: red;
+				}
+				&.main-color{
+					color: #aba4a4;
+				}
+				&:hover{
+					color: #000;
+				}
+			}
+		}
+	}
 }
-.nav-display ul{
-	margin: 0;
-	padding: 0;
-	height: 20px;
-	font-size: 16px;
-}
-.nav-display ul li{
-	display: inline-block;
-	margin-left: 32px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	text-align: center;
-}
-.nav-display ul li a{
-	text-decoration: none;
-	color: #aba4a4;
-}
-.nav-display ul li a:hover{
-	color: #000;
-}
-
 /*=======================================================
 // MOVILE NAVBAR
 =======================================================*/
@@ -137,6 +139,15 @@ main{
 			a{
 				text-decoration: none;
 				color: #aba4a4;
+				&.red{
+					color: red;
+				}
+				&.main-color{
+					color: #aba4a4;
+				}
+				&:hover{
+					color: #000;
+				}
 			}
 		}
 		.media{
@@ -164,6 +175,10 @@ main{
 	@include width-height(100%,500px);
 	text-align: center;
 	margin-top: 40px;
+	display: none;
+	&.active{
+		display: block;
+	}
 	iframe{
 		@include width-height(498px,500px);
 		margin-left: auto;
@@ -179,6 +194,10 @@ main{
 	text-align: center;
 	margin-top: 40px;
 	margin-bottom: 20px;
+	display: none;
+	&.active{
+		display: block;
+	}
 	iframe{
 		@include width-height(498px,auto);
 		margin-left: auto;
@@ -281,10 +300,14 @@ main{
 
 .carrousel{
 	@include width-height(100%,650px);
-}
-.carrousel img{
-	max-height: 650px;
-	@include width-height(100%,100%);
+	display: none;
+	&.active{
+		display: block;
+	}
+	img{
+		max-height: 650px;
+		@include width-height(100%,100%);
+	}
 }
 .fade{
 	-webkit-animation-name: fade;
@@ -314,7 +337,11 @@ main{
 =======================================================*/
 
 .general{
+	display: none;
 	text-align: center;
+	&.active{
+		display: block;
+	}
 	h1{
 		font-size: 55px;
 	}
@@ -336,6 +363,7 @@ main{
 	bottom: 0;
 	left: 0;
 	border: 2px #F2F2F2 solid;
+	display: block;
 }
 #live,#live2{
 	cursor: pointer;
@@ -349,6 +377,10 @@ main{
 	height: 750px;
 	padding: 0;
 	margin: 0;
+	display: none;
+	&.active{
+		display: block;
+	}
 }
 .categorias{
 	width: 60%;
@@ -409,7 +441,12 @@ main{
 #BtnDeportes,#BtnCultura,#BtnNoticias{
 	cursor: pointer;
 }
-
+#culturaEntretenimiento{
+	display: none;
+	&.active{
+		display: block;
+	}
+}
 /*=======================================================
 // SOUNDCLOUD
 =======================================================*/
@@ -556,4 +593,8 @@ main{
 #programasFrame{
 	width:100%;
     height:450;
+}
+
+.hide{
+	display: none;
 }

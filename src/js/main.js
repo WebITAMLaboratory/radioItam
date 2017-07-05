@@ -53,92 +53,64 @@ $(document).ready(function(){
 
     //======================Open event of player =================================
     //============================================================================
-    document.getElementById("live").addEventListener("click",function()
-    {
-    if(document.getElementById("player").classList.contains("display-off"))
-    {
-        document.getElementById("player").classList.remove("display-off");
-        document.getElementById("player").classList.add("display-on");
-        document.getElementById("livee").style.color = "red";
-        document.getElementById("live2").style.color = "red";
-    }else
-    {
-        document.getElementById("player").classList.remove("display-on");
-        document.getElementById("player").classList.add("display-off");
-        document.getElementById("livee").style.color = "#aba4a4";
-        document.getElementById("live2").style.color = "#aba4a4";
-    }
+    $('#live').on('click',function(e){
+        e.preventDefault();
+        $('#player').toggleClass('hide');
+        $('#livee').toggleClass('red main-color');
+        $('#live2').toggleClass('red main-color');
     });
-    document.getElementById("live2").addEventListener("click",function()
-    {
-    if(document.getElementById("player").classList.contains("display-off"))
-    {
-        document.getElementById("player").classList.remove("display-off");
-        document.getElementById("player").classList.add("display-on");
-        document.getElementById("livee").style.color = "red";
-        document.getElementById("live2").style.color = "red";
-    }else
-    {
-        document.getElementById("player").classList.remove("display-on");
-        document.getElementById("player").classList.add("display-off");
-        document.getElementById("livee").style.color = "#aba4a4";
-        document.getElementById("live2").style.color = "#aba4a4";
-    }
+    $('#live2').on('click',function(e){
+        e.preventDefault();
+        $('#player').toggleClass('hide');
+        $('#livee').toggleClass('red main-color');
+        $('#live2').toggleClass('red main-color');
     });
     // ======================END Open event of player //==============================
     //=================================================================================
 
     //========================Change event for programas =====================
     //=================================================================================
-    document.getElementById("programas").addEventListener("click",function()
-    {
-    if(document.getElementById("radio").classList.contains("display-off"))
-    {
-        document.getElementById("radio").classList.remove("display-off");
-        document.getElementById("radio").classList.add("display-on");
-        document.getElementById("carrousel").classList.remove("display-on");
-        document.getElementById("carrousel").classList.remove("display-off");
-        document.getElementById("carrousel").classList.add("display-off");
-        document.getElementById("culturaEntretenimiento").classList.remove("display-on");
-        document.getElementById("culturaEntretenimiento").classList.remove("display-off");
-        document.getElementById("culturaEntretenimiento").classList.add("display-off");
-        document.getElementById("iframeJs").src = "";
-    }
+    $('#programas').on('click',function(e){
+        e.preventDefault();
+        if(!$('#radio').hasClass('active'))
+        {
+            $('.active').each(function(){
+                $(this).toggleClass('active');
+            });
+            $('#radio').toggleClass('active');
+        }
+        //GET OBJECT SOUNDCLOUD AND CHANGE LOAD PROPERTY
     });
-    document.getElementById("programas2").addEventListener("click",function()
-    {
-    if(document.getElementById("radio").classList.contains("display-off"))
-    {
-        document.getElementById("radio").classList.remove("display-off");
-        document.getElementById("radio").classList.add("display-on");
-        document.getElementById("carrousel").classList.remove("display-on");
-        document.getElementById("carrousel").classList.remove("display-off");
-        document.getElementById("carrousel").classList.add("display-off");
-        document.getElementById("culturaEntretenimiento").classList.remove("display-on");
-        document.getElementById("culturaEntretenimiento").classList.remove("display-off");
-        document.getElementById("culturaEntretenimiento").classList.add("display-off");
-        document.getElementById("iframeJs").src = "";
-    }
+    $('#programas2').on('click',function(e){
+        e.preventDefault();
+        if(!$('#radio').hasClass('active'))
+        {
+            $('.active').each(function(){
+                $(this).toggleClass('active');
+            });
+            $('#radio').toggleClass('active');
+            $(document).scrollTop(0);
+        }
+        //GET OBJECT SOUNDCLOUD AND CHANGE LOAD PROPERTY
     });
     //========================END Open event of player //================================================
     //====================================================================================================
 
     // ========================Change event for main =====================================================
     //=====================================================================================================
-    document.getElementById("header-img").addEventListener("click",function()
-    {
-    if(document.getElementById("carrousel").classList.contains("display-off"))
-    {
-        document.getElementById("carrousel").classList.remove("display-off");
-        document.getElementById("carrousel").classList.add("display-on");
-        document.getElementById("radio").classList.remove("display-on");
-        document.getElementById("radio").classList.remove("display-off");
-        document.getElementById("radio").classList.add("display-off");
-        document.getElementById("culturaEntretenimiento").classList.remove("display-on");
-        document.getElementById("culturaEntretenimiento").classList.remove("display-off");
-        document.getElementById("culturaEntretenimiento").classList.add("display-off");
-        document.getElementById("iframeJs").src = "";
-    }
+    $('#header-img').on('click',function(e){
+        e.preventDefault();
+        if(!$('#carrousel').hasClass('active'))
+        {
+            $('.active').each(function(){
+                $(this).toggleClass('active');
+            });
+            $('#carrousel').toggleClass('active');
+            $('#general').toggleClass('active');
+            $('#youtubeApi').toggleClass('active');
+            $('#facebookApi').toggleClass('active');
+            $(document).scrollTop(0);
+        }
     });
     //=======================END Open event of main //======================================================
     //======================================================================================================
