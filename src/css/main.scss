@@ -439,6 +439,7 @@ main{
 					a{
 						@include width-height(64px,64px);
 						text-align: center;
+						display: block;
 						i{
 							@include width-height(64px,64px);	
 						}
