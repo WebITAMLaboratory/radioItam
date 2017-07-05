@@ -175,6 +175,9 @@ main{
 	@include width-height(100%,500px);
 	text-align: center;
 	margin-top: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #cfcfcf;
 	display: none;
 	&.active{
 		display: block;
@@ -344,6 +347,9 @@ main{
 	}
 	h1{
 		font-size: 55px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background: #cfcfcf;
 	}
 	p{
 		font-size: 30px;

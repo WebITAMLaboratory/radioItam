@@ -79,6 +79,7 @@ $(document).ready(function(){
             });
             $('#radio').toggleClass('active');
         }
+        $(document).scrollTop(0);
         //GET OBJECT SOUNDCLOUD AND CHANGE LOAD PROPERTY
     });
     $('#programas2').on('click',function(e){
@@ -89,8 +90,8 @@ $(document).ready(function(){
                 $(this).toggleClass('active');
             });
             $('#radio').toggleClass('active');
-            $(document).scrollTop(0);
         }
+        $(document).scrollTop(0);
         //GET OBJECT SOUNDCLOUD AND CHANGE LOAD PROPERTY
     });
     //========================END Open event of player //================================================
@@ -109,8 +110,8 @@ $(document).ready(function(){
             $('#general').toggleClass('active');
             $('#youtubeApi').toggleClass('active');
             $('#facebookApi').toggleClass('active');
-            $(document).scrollTop(0);
         }
+        $(document).scrollTop(0);
     });
     //=======================END Open event of main //======================================================
     //======================================================================================================
