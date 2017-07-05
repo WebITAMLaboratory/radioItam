@@ -25,7 +25,7 @@ $(document).ready(function(){
     //===============================CHECK WINDOWS SIZE FOR APIS ===================================================
         if($(document).width() <= 500){
             var size = Math.round($(document).width() * 0.9);
-            $('#facebookApi').attr('src','https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2Fradio.itam%2F&tabs=timeline&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId&width='+size+'&height=500');
+            $('#facebookApi iframe').attr('src','https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2Fradio.itam%2F&tabs=timeline&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId&width='+size+'&height=500');
         }
     //==========================END ONCLICK PROGRAMA EVENT===========================================================================
     //===============================================================================================================================
