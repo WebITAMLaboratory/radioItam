@@ -418,11 +418,12 @@ main{
 		@include width-height(70px,302px);
 		position: fixed;
 		left: 0;
-		top:250px;
+		top:150px;
 		width: 70px;
 		background: none;
 		border: none;
-		z-index: 20;
+		z-index: 6;
+		opacity: 0.8;
 		nav{
 			@include width-height(70px,302px);
 			padding: 0;
