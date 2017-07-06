@@ -8,18 +8,33 @@
 	<meta name="description" content="Home page of Radio Itam, come visit us and hear some great music!">
 	<meta name="robots" content="index, follow">
 	<meta name="author" content="Emiliano Sotomayor (uboat46), Victor Osornio (Worrengilgamesh)">
-	<link rel="shortcut icon" href="images/RIp.ico"/>
+	<link rel="shortcut icon" href="RIp.ico"/>
 	<!--<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">-->
 	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+	<meta property="og:type" content="music.radio_station">
+	<meta property="og:title" content="CRTV HOME">
+	<meta property="og:url" content="http://radio.itam.mx/">
+	<meta property="og:image" content="http://radio.itam.mx/012764193f75a34e0387c39cdd26481e.png">
+	<meta content="300" property="og:image:height">
+	<meta content="400" property="og:image:width">
+	<meta content="image/png" property="og:image:type">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@RadioITAM">
+	<meta name="twitter:title" content="CRTV HOME">
+	<meta name="twitter:description" content="Home page of Radio Itam, come visit us and hear some great music!">
+	<meta name="twitter:image" content="http://radio.itam.mx/012764193f75a34e0387c39cdd26481e.png">
 </head>
 <body>
+	<!--SOUNDCLOUD CLOSE BUTTON-->
+	<p id="closeSound">X</p>
 	<!-- NAV HIDE BAR -->
 	<nav id="nav-hide-page" class="hide">
 		<ul>
 			<li id="programas"><a title="">PROGRAMAS</a></li>
 			<li><a title="">VIDEOS</a></li>
-			<li><a title="">CONTACTO</a></li>
+			<li><a id="contacts" title="">CONTACTO</a></li>
 			<li id="live"><a id="livee" class="main-color">EN VIVO</a></li>
 			<li class="media"><a href="https://twitter.com/radioitam" title="twitter" target="_blank"><i id="twitter" class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
 			<li class="media"><a href="https://www.facebook.com/radio.itam/" title="facebook" target="_blank"><i id="facebook" class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
@@ -35,7 +50,7 @@
 			<ul>
 				<li><a id="programas2" title="">PROGRAMAS</a></li>
 				<li><a title="">VIDEOS</a></li>
-				<li><a title="">CONTACTO</a></li>
+				<li><a id="contacts2" title="">CONTACTO</a></li>
 				<li><a id="live2" class="main-color">EN VIVO</a></li>
 			</ul>
 		</nav>
@@ -99,50 +114,57 @@
 					<li>
 						<p id="BtnCultura">Cultura<span>/</span>Entretenimiento</p>
 						<ul id="entretenimientoMin">
-							<li class="cursor" onclick="quitaPon('Radiola')"><p>RADIOLA</p></li>
-							<li class="cursor" onclick="quitaPon('SARCÓSMICO')"><p>SARCÓSMICO</p></li>
-							<li class="cursor" onclick="quitaPon('YNosotrosQue')"><p>Y NOSOTROS QUÉ?</p></li>
-							<li class="cursor" onclick="quitaPon('HablemosDeGénero')"><p>HABLEMOS DE GÉNERO</p></li>
-							<li class="cursor" onclick="quitaPon('CiniCine')"><p>CINI CINE</p></li>
-							<li class="cursor" onclick="quitaPon('MassiveChisme')"><p>MASSIVE CHISME</p></li>
-							<li class="cursor" onclick="quitaPon('PortalDelCine')"><p>PORTAL DEL CINE</p></li>
-							<li class="cursor" onclick="quitaPon('CatadorPorAccidente')"><p>CATADOR POR ACCIDENTE</p></li>
+							<li class="cursor" id="RadiolaM"><p>RADIOLA</p></li>
+							<li class="cursor" id="SARCOSMICOM"><p>SARCÓSMICO</p></li>
+							<li class="cursor" id="YNosotrosQueM"><p>Y NOSOTROS QUÉ?</p></li>
+							<li class="cursor" id="HablemosDeGeneroM"><p>HABLEMOS DE GÉNERO</p></li>
+							<li class="cursor" id="CiniCineM"><p>CINI CINE</p></li>
+							<li class="cursor" id="MassiveChismeM"><p>MASSIVE CHISME</p></li>
+							<li class="cursor" id="PortalDelCineM"><p>PORTAL DEL CINE</p></li>
+							<li class="cursor" id="CatadorPorAccidenteM"><p>CATADOR POR ACCIDENTE</p></li>
 						</ul>
 					</li>
 					<li><p id="BtnDeportes">Deportes</p></li>
-					<li><p id="BtnNoticias">Noticias y política</p></li>
+					<li>
+						<p id="BtnNoticias">Noticias y política</p>
+						<ul id="noticiasMin">
+							<li class="cursor" id="GGNewsM"><p>GG NEWS</p></li>
+							<li class="cursor" id="LaMesaM"><p>LA MESA</p></li>
+							<li class="cursor" id="ChilaquilesConHuevosM"><p>CHILAQUILES CON HUEVO</p></li>
+							<li class="cursor" id="MalDelPuercoM"><p>MAL DEL PUERCO</p></li>
+							<li class="cursor" id="ElCapitalM"><p>EL CAPITAL</p></li>
+							<li class="cursor" id="LaSobreMesaM"><p>LA SOBREMESA</p></li>
+							<li class="cursor" id="LosGuapoliticosM"><p>LOS GUAPOLÍTICOS</p></li>
+						</ul>
+					</li>
 				</ul>
 			</section>
-			<section id="clases-programas" class="programas display-off">
-				<ul id="entretenimiento" class="display-off">
-					<li class="cursor" onclick="quitaPon('Radiola')"><p>RADIOLA</p></li>
-					<li class="cursor" onclick="quitaPon('SARCÓSMICO')"><p>SARCÓSMICO</p></li>
-					<li class="cursor" onclick="quitaPon('YNosotrosQue')"><p>Y NOSOTROS QUÉ?</p></li>
-					<li class="cursor" onclick="quitaPon('HablemosDeGénero')"><p>HABLEMOS DE GÉNERO</p></li>
-					<li class="cursor" onclick="quitaPon('CiniCine')"><p>CINI CINE</p></li>
-					<li class="cursor" onclick="quitaPon('MassiveChisme')"><p>MASSIVE CHISME</p></li>
-					<li class="cursor" onclick="quitaPon('PortalDelCine')"><p>PORTAL DEL CINE</p></li>
-					<li class="cursor" onclick="quitaPon('CatadorPorAccidente')"><p>CATADOR POR ACCIDENTE</p></li>
+			<section id="clases-programas" class="programas">
+				<ul id="entretenimiento">
+					<li class="cursor" id="Radiola"><p>RADIOLA</p></li>
+					<li class="cursor" id="SARCOSMICO"><p>SARCÓSMICO</p></li>
+					<li class="cursor" id="YNosotrosQue"><p>Y NOSOTROS QUÉ?</p></li>
+					<li class="cursor" id="HablemosDeGenero"><p>HABLEMOS DE GÉNERO</p></li>
+					<li class="cursor" id="CiniCine"><p>CINI CINE</p></li>
+					<li class="cursor" id="MassiveChisme"><p>MASSIVE CHISME</p></li>
+					<li class="cursor" id="PortalDelCine"><p>PORTAL DEL CINE</p></li>
+					<li class="cursor" id="CatadorPorAccidente"><p>CATADOR POR ACCIDENTE</p></li>
 				</ul>
-				<ul id="deportes" class="display-off">
-					<li class="cursor" onclick="quitaPon('GGNews')"><p>GG NEWS</p></li>
-					<li class="cursor" onclick="quitaPon('LaMesa')"><p>LA MESA</p></li>
-					<li class="cursor" onclick="quitaPon('ChilaquilesConHuevos')"><p>CHILAQUILES CON HUEVO</p></li>
-					<li class="cursor" onclick="quitaPon('MalDelPuerco')"><p>MAL DEL PUERCO</p></li>
-					<li class="cursor" onclick="quitaPon('ElCapital')"><p>EL CAPITAL</p></li>
-					<li class="cursor" onclick="quitaPon('LaSobreMesa')"><p>LA SOBREMESA</p></li>
-					<li class="cursor" onclick="quitaPon('LosGuapoliticos')"><p>LOS GUAPOLÍTICOS</p></li>
+				<ul id="noticias">
+					<li class="cursor" id="GGNews"><p>GG NEWS</p></li>
+					<li class="cursor" id="LaMesa"><p>LA MESA</p></li>
+					<li class="cursor" id="ChilaquilesConHuevos"><p>CHILAQUILES CON HUEVO</p></li>
+					<li class="cursor" id="MalDelPuerco"><p>MAL DEL PUERCO</p></li>
+					<li class="cursor" id="ElCapital"><p>EL CAPITAL</p></li>
+					<li class="cursor" id="LaSobreMesa"><p>LA SOBREMESA</p></li>
+					<li class="cursor" id="LosGuapoliticos"><p>LOS GUAPOLÍTICOS</p></li>
 				</ul>		
 			</section>
 		</div>
 		<div id="culturaEntretenimiento">
-			<section id="ProgrmasJS" class="display-off">			
+			<section id="ProgrmasJS">			
 				<ul>
-					<li>Imagen</li>
-					<li><p id="titulo"></p></li>
-					<li><iframe id="iframeJs" width="100%" height="450" scrolling="no" frameborder="no"></iframe></li>
-					<li>Info</li>
-					<li>Sub Info</li>
+					<li><iframe id="iframeJs" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/278674724&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe></li>
 				</ul>			
 			</section>
 		</div>
@@ -151,6 +173,71 @@
 			<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/278674724&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 		</div>
 		-->
+		<div id="contactos" class="contactos">
+			<div class="contacto">
+				<figure>
+					<img src="images/no_user.png" alt="">
+					<figcaption>Juan Perez</figcaption>
+				</figure>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> 
+					Quam, recusandae beatae pariatur voluptatum dolores similique
+				</p>
+			</div>
+			<div class="contacto">
+				<figure>
+					<img src="images/no_user.png" alt="">
+					<figcaption>Juan Perez</figcaption>
+				</figure>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> 
+					Quam, recusandae beatae pariatur voluptatum dolores similique
+				</p>
+			</div>
+			<div class="contacto">
+				<figure>
+					<img src="images/no_user.png" alt="">
+					<figcaption>Juan Perez</figcaption>
+				</figure>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> 
+					Quam, recusandae beatae pariatur voluptatum dolores similique
+				</p>
+			</div>
+			<div class="contacto">
+				<figure>
+					<img src="images/no_user.png" alt="">
+					<figcaption>Juan Perez</figcaption>
+				</figure>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> 
+					Quam, recusandae beatae pariatur voluptatum dolores similique
+				</p>
+			</div>
+			<footer>
+				<div class="redes">
+					<p>
+						<a href="mailto:crtv@itam.mx?subject=Mail de CRTV.ITAM.MX"><i class="fa fa-envelope" aria-hidden="true"></i>crtv@itam.mx</a>
+					</p>
+					<p>
+						<a href="https://twitter.com/radioitam" title="twitter" target="_blank"><i id="twitter" class="fa fa-twitter" id="twitter"></i>@RadioITAM</a>
+					</p>
+					<p>
+						<a href="https://www.facebook.com/radio.itam/" title="facebook" target="_blank"><i id="facebook" class="fa fa-facebook"></i>@radio.itam</a>
+					</p>
+					<p>
+						<a href="https://www.youtube.com/channel/UCg32eGxCoTuwVLNv-7k6L2g" title="youtube" target="_blank"><i id="youtube" class="fa fa-youtube-play"></i>Radio ITAM</a>
+					</p>
+				</div>
+				<p class="address">
+						ITAM Campus Rio Hondo <br>
+						Río Hondo #1 <br>
+						Col. Progreso Tizapán <br>
+						CP. 01080. Álvaro Obregón, <br>
+						Ciudad de México <br>
+				</p>
+			</footer>
+		</div>
 	</main>
 	<div class="player hide" id="player">
 		<iframe src="https://mixlr.com/users/6061859/embed?autoplay=true" width="100%" height="150px" scrolling="no" frameborder="no" marginheight="0" marginwidth="0"></iframe>

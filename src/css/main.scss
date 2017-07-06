@@ -436,19 +436,23 @@ main{
 	margin: 0;
 	background: #d7d7d7;
 	float: left;
-}
-.programas ul{
-	margin: 0;
-	padding: 0 0 0 40px;
-	font-size: 25px;
-}
-.programas ul li{
 	display: block;
-	padding-top: 5px;
-	color: #969696;
-	font-weight: bold;
+	ul{
+		margin: 0;
+		padding: 0 0 0 40px;
+		font-size: 25px;
+		display: none;
+		&.active{
+			display: block;
+		}
+		li{
+			display: block;
+			padding-top: 5px;
+			color: #969696;
+			font-weight: bold;
+		}
+	}
 }
-
 #programas,#programas2{
 	cursor: pointer;
 }
@@ -458,10 +462,22 @@ main{
 #BtnDeportes,#BtnCultura,#BtnNoticias{
 	cursor: pointer;
 }
+#contacts,#contacts2{
+	cursor: pointer;
+}
 #culturaEntretenimiento{
 	display: none;
 	&.active{
 		display: block;
+	}
+	section{
+		width: 100%;
+		ul{
+			width: 90%;
+			padding: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 }
 /*=======================================================
@@ -471,6 +487,75 @@ main{
 	width: 100%;
 	margin: 0;
 	padding: 0;
+}
+/*=======================================================
+// CONTACTOS
+=======================================================*/
+.contactos{
+	@include width-height(100%,100%);
+	margin: 0;
+	padding: 0;
+	display: none;
+	&.active{
+		display: block;
+	}
+	.contacto{
+		@include width-height(100%,386px);
+		margin: 30px 0 0 0;
+		padding: 0;
+		&:nth-child(even){
+			background: #D7D7D7;
+		}
+		&:nth-child(1){
+			margin:0;	
+		}
+		figure{
+			@include width-height(256px,286px);
+			padding-top: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			img{
+				@include width-height(256px,256px);
+			}
+			figcaption{
+				font-size: 20px;
+				text-align: center;
+			}
+		}
+		p{
+			text-align: center;
+			font-size: 18px;
+		}
+	}
+	footer{
+		@include width-height(100%,180px);
+		background: #1f1b1b;
+		.redes{
+			@include width-height(50%,180px);
+			float: left;
+			text-align: center;
+			a{
+				font-size: 18px;
+				color: white;
+				#facebook{
+					color: #3b5998;
+				}
+				#twitter{
+					color: #1dcaff;
+				}
+				#youtube{
+					color: #b31217;
+				}
+			}
+		}
+		.address{
+			@include width-height(50%,180px);
+			font-size: 18px;
+			float: left;
+			text-align: center;
+			color: white;
+		}
+	}
 }
 
 /*=======================================================
@@ -555,10 +640,33 @@ main{
 			}
 		}
 	}
+	.programas{
+		display: none;
+	}
+}
+#closeSound{
+	position: fixed;
+	top: 81px;
+	right: 30px;
+	font-size: 50px;
+	padding-top: 8px;
+	-webkit-border-radius: 5%;
+	-moz-border-radius: 5%;
+	-ms-border-radius: 5%;
+	-o-border-radius: 5%;
+	background: #aba4a4;
+	z-index: 7;
+	display: none;
+	&.on{
+		display: block;
+	}
+
 }
 @media only screen and (max-width: 720px)
 {
-	
+	.programas{
+		display: none;
+	}
 	.carrousel{
 		@include width-height(100%,200px);
 	}
