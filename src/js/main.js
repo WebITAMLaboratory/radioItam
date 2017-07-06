@@ -141,15 +141,19 @@ $(document).ready(function(){
         e.preventDefault();
         if($(document).width() <= 980)
         {
+            var timeout = 0;
             if(!$('#entretenimientoMin').hasClass('active'))
             {
+                clearTimeout(timeout);
                 $('#entretenimientoMin').toggleClass('active');
+                $('#BtnCultura').css('background','#B9B9B9');
                 $('#entretenimientoMin li').each(function(){
                     $(this).height(60);
                 });
             }
             else
             {
+                $('#BtnCultura').css('background','#D7D7D7');
                 var lis = $('#entretenimientoMin li');
                 var i = 0;
                 lis.each(function(){
@@ -157,7 +161,7 @@ $(document).ready(function(){
                     $(this).height(0);
                     if( i == lis.length)
                     {
-                        setTimeout(function(){
+                        timeout = setTimeout(function(){
                             $('#entretenimientoMin').toggleClass('active');
                         },900);
                     }
