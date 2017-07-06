@@ -393,31 +393,42 @@ main{
 	padding: 0;
 	margin: 0;
 	float: left;
-}
-.categorias ul{
-	margin: 0;
-	padding: 0 0 0 40px;
-	font-size: 50px;
-}
-.categorias ul li{
-	display: block;
-	padding-top: 20px;
-	color: #000;
-}
-.categorias ul li p span{
-	color: red;
-}
-.categorias ul li p{
-	background: #fff;
-	display: inline-block;
-	padding: 2px;
-}
-.categorias ul li p:hover{
-	-webkit-border-radius: 0 20px 0 20px;
-	-moz-border-radius: 0 20px 0 20px;
-	-ms-border-radius: 0 20px 0 20px;
-	-o-border-radius: 0 20px 0 20px;
-    background: #d7d7d7;
+	ul{
+		margin: 0;
+		padding: 0 0 0 40px;
+		font-size: 50px;
+		li{
+			display: block;
+			padding-top: 20px;
+			color: #000;
+			p{
+				background: #fff;
+				display: inline-block;
+				padding: 2px;
+				&:hover{
+					-webkit-border-radius: 0 20px 0 20px;
+					-moz-border-radius: 0 20px 0 20px;
+					-ms-border-radius: 0 20px 0 20px;
+					-o-border-radius: 0 20px 0 20px;
+					background: #d7d7d7;
+				}
+				span{
+					color: red;
+				}
+			}
+			ul{
+				height: 0;
+				display: none;
+				&.active{
+					height: auto;
+					display: block;
+				}
+				li{
+					height: 0;
+				}
+			}
+		}
+	}
 }
 .programas{
 	width: 40%;
@@ -498,6 +509,53 @@ main{
 	}
 	#nav-hide-page ul li{
 		padding-left: 30px;
+	}
+	.radio{
+		@include width-height(100%,auto);
+	}
+	.categorias{
+		@include width-height(100%,auto);
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		ul{
+			margin: 0;
+			padding: 0 0 0 0;
+			font-size: 30px;
+			li{
+				display: block;
+				padding-top: 20px;
+				color: #000;
+				p{
+					background: #fff;
+					display: inline-block;
+					padding: 2px;
+					&:hover{
+						-webkit-border-radius: 0 20px 0 20px;
+						-moz-border-radius: 0 20px 0 20px;
+						-ms-border-radius: 0 20px 0 20px;
+						-o-border-radius: 0 20px 0 20px;
+						background: #d7d7d7;
+					}
+					span{
+						color: red;
+					}
+				}
+				ul{
+					li{
+						padding:0;
+						font-size: 18px;
+						background: #d7d7d7;
+						border-bottom:1px solid black;
+						transition: 1s;
+						overflow: hidden;
+						p{
+							background: none;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 @media only screen and (max-width: 720px)

@@ -137,6 +137,36 @@ $(document).ready(function(){
 
     //==========================Display cultura event =======================================================
     //======================================================================================================
+    $('#BtnCultura').on('click',function(e){
+        e.preventDefault();
+        if($(document).width() <= 980)
+        {
+            if(!$('#entretenimientoMin').hasClass('active'))
+            {
+                $('#entretenimientoMin').toggleClass('active');
+                $('#entretenimientoMin li').each(function(){
+                    $(this).height(60);
+                });
+            }
+            else
+            {
+                var lis = $('#entretenimientoMin li');
+                var i = 0;
+                lis.each(function(){
+                    i += 1; 
+                    $(this).height(0);
+                    if( i == lis.length)
+                    {
+                        setTimeout(function(){
+                            $('#entretenimientoMin').toggleClass('active');
+                        },900);
+                    }
+                });
+            }
+            
+        }
+    });
+
     document.getElementById("BtnCultura").addEventListener("click",function()
     {
     if(document.getElementById("clases-programas").classList.contains("display-off"))
